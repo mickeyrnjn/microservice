@@ -27,7 +27,7 @@ spec:
         app: greeting-dplmnt
     spec:
       containers:
-      - image: localhost:5000/greeting:v1
+      - image: localhost:5000/greeting:${IMAGE_TAG}
         imagePullPolicy: IfNotPresent
         name: greeting
         ports:
